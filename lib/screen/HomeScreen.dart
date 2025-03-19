@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(14),
                                       child: Container(
-                                        width: mq.width * .13,
+                                        width: mq.width * .12,
                                         height: mq.height * .1,
                                         decoration: BoxDecoration(
                                           image: DecorationImage(
@@ -499,6 +499,293 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     ],
+                  ),
+                  const SizedBox(height: 20),
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: kDeepGray,
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(14),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                "QUICK MONEY TRANSFER",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: mq.width * .025,
+                                ),
+                              ),
+
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "SEE MORE",
+                                    style: TextStyle(
+                                      color: kPink,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: mq.width * .025,
+                                    ),
+                                  ),
+                                  Icon(
+                                    Icons.keyboard_arrow_right,
+                                    color: kPink,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              children: [
+                                Stack(
+                                  children: [
+                                    Positioned(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            14,
+                                          ),
+                                          color: kGreen,
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(1.2),
+                                          child: ClipRRect(
+                                            borderRadius: BorderRadius.circular(
+                                              14,
+                                            ),
+                                            child: Container(
+                                              width: mq.width * .14,
+                                              height: mq.height * .06,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDSL1CKDbTjJSHTufPDBGPNipQekZOXh6fhw&s',
+                                                  ),
+                                                  fit: BoxFit.cover,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      bottom: -3,
+                                      right: 0,
+                                      child: Container(
+                                        height: mq.height * 0.02,
+                                        width: mq.width * 0.02,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: kPink,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(width: 10),
+                                Stack(
+                                  children: [
+                                    Positioned(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            14,
+                                          ),
+                                          color: kGreen,
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(1.2),
+                                          child: ClipRRect(
+                                            borderRadius: BorderRadius.circular(
+                                              14,
+                                            ),
+                                            child: Container(
+                                              width: mq.width * .14,
+                                              height: mq.height * .06,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC7Qym_m9UI9fJ8QOdjQtqQ3021o51xtJo-Q&s',
+                                                  ),
+                                                  fit: BoxFit.cover,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      bottom: -3,
+                                      right: 0,
+                                      child: Container(
+                                        height: mq.height * 0.02,
+                                        width: mq.width * 0.02,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: kPink,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(width: 10),
+                                Stack(
+                                  children: [
+                                    Positioned(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            14,
+                                          ),
+                                          color: kGray.withValues(alpha: .5),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(1.2),
+                                          child: ClipRRect(
+                                            borderRadius: BorderRadius.circular(
+                                              14,
+                                            ),
+                                            child: Container(
+                                              width: mq.width * .14,
+                                              height: mq.height * .06,
+                                              decoration: BoxDecoration(
+                                                color: kGray.withValues(
+                                                  alpha: .5,
+                                                ),
+                                              ),
+                                              child: Center(
+                                                child: Text(
+                                                  'SN',
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: mq.width * .05,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      bottom: -3,
+                                      right: 0,
+                                      child: Container(
+                                        height: mq.height * 0.02,
+                                        width: mq.width * 0.02,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: kPink,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(width: 10),
+                                Stack(
+                                  children: [
+                                    Positioned(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            14,
+                                          ),
+                                          color: kGreen,
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(1.2),
+                                          child: ClipRRect(
+                                            borderRadius: BorderRadius.circular(
+                                              14,
+                                            ),
+                                            child: Container(
+                                              width: mq.width * .14,
+                                              height: mq.height * .06,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  image: NetworkImage(
+                                                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGa8I0D4BxMXKIS-KSyNIVRe6VVQQX9e76l8irAw92kgvfKXBMgGDFxHxp8IDe7pQPZ0&usqp=CAU',
+                                                  ),
+                                                  fit: BoxFit.cover,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      bottom: -3,
+                                      right: 0,
+                                      child: Container(
+                                        height: mq.height * 0.02,
+                                        width: mq.width * 0.02,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: kPink,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(width: 10),
+                                Stack(
+                                  children: [
+                                    Positioned(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            14,
+                                          ),
+                                          color: kGray.withValues(alpha: .5),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(1.2),
+                                          child: ClipRRect(
+                                            borderRadius: BorderRadius.circular(
+                                              14,
+                                            ),
+                                            child: Container(
+                                              width: mq.width * .14,
+                                              height: mq.height * .06,
+                                              decoration: BoxDecoration(
+                                                color: kGray.withValues(
+                                                  alpha: .5,
+                                                ),
+                                              ),
+                                              child: Center(
+                                                child: Icon(
+                                                  Icons.add,
+                                                  color: Colors.white,
+                                                  size: mq.width * 0.08,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
